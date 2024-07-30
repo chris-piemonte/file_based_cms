@@ -1,0 +1,17 @@
+<% if session[:message] %>
+    <p class="message"><%= session.delete(:message) %></p>
+<% end %>
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>CMS</title>
+    <link rel="stylesheet" href="/cms.css" type="text/css" />
+  <head>
+
+  <body>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>
